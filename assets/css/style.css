@@ -1,12 +1,213 @@
+
+/* # fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* # variables */
+:root {
+  --color-primary: hsl(36, 55%, 60%);
+  --color-primary-dark:hsl(36, 50%, 23%); 
+
+  --color-text: hsla(0, 0%, 100%, 0.95); 
+  --color-text-2: hsla(0, 0%, 100%, 0.75);
+
+  --color-bg: hsl(36, 7%, 11%);
+  --color-bg-2: hsl(36, 7%, 15%);
+  --color-bg-alpha-60: hsla(0, 0%, 0%, 0.6);
+
+  --color-border: hsla(0, 0%, 100%, 0.15);
+  --color-border-2: hsla(0, 0%, 100%, 0.08);
+  --color-border-dark: hsla(0, 0%, 0%, 0.15);
+
+  /* scrollbar */
+  --color-scrollbar-track: hsl(0, 0%, 21%);
+  --color-scrollbar-thumb: hsl(0, 0%, 53%);
+
+  /* font size */
+  --fs-body: 16px;
+  --fs-lg: 20px;
+  --fs-xl: 24px;
+  --fs-2xl: 31px;
+  --fs-3xl: 40px;
+  --fs-4xl: 54px;
+
+
+  /* padding */
+  --section-pt: 80px;
+  --section-pb: 80px;
+}
+/* # base */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+}
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: var(--fs-body);
+  color: var(--color-text-2);
+  background-color: var(--color-bg);
+  line-height: 1.2;
+  -webkit-text-size-adjust: 100%;
+  -webkit-top-highlight-color: transparent;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1.2;
+  color: var(--color-text);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: var(--color-primary);
 }
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+p + p {
+  margin-top: 15px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-scrollbar-thumb);
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  height: 54px;
+  border: 1px solid var(--color-border);
+  background-color: transparent;
+  border-radius: 10px;
+  font: inherit;
+  padding: 0 15px;
+  outline: none;
+  color: var(--color-text);
+}
+
+textarea {
+  display: block;
+  padding-top: 15px;
+  resize: none;
+}
+
+::placeholder {
+  color: var(--color-text-2);
+  opacity: 1;
+}
+
+/* # page Wrapper */
+.page-wrapper {
+  overflow: hidden;
+}
+
+/* # container */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+/* # animation on scroll */
+/* # section header */
+/* # btn */
+/* # tabs */
+/* # preloader */
+
+/* # header */
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 22px 0;
+  transition: background-color .6s;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo img {
+  max-width: 125px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu li {
+  display: inline-block;
+}
+
+.header .menu li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header .menu a {
+  color: var(--color-text);
+  text-transform: capitalize;
+  display: block;
+  transition: color .5s;
+}
+
+.header .menu a:hover {
+  color: var(--color-primary);
+}
+
+.header-bg {
+  background-color: var(--color-bg-alpha-60);
+}
+.header-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: -1;
+}
+
+/* # footer */
+/* # hero */
+/* # about */
+/* # stats */
+/* # rest-menu */
+/* # team */
+/* # Testimonials */
+/* # timing */
+/* # contact */
 
