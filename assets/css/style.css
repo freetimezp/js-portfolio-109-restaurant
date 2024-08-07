@@ -600,6 +600,34 @@ textarea {
   width: 12px;
   background-color: var(--color-primary);
 }
+
 /* # timing */
+.timing {
+  padding: var(--section-pt) 0 var(--section-pb);
+  position: relative;
+}
+
+.timing-bg {
+  position: absolute;
+  inset: 0;
+  background: url('../images/timing-bg.jpg') fixed center/cover;
+  z-index: -1;
+  filter: brightness(0.3);
+}
+
+.timing .section-header {
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+.timing-text {
+  font-size: var(--fs-lg);
+}
+
+.timing-text span {
+  display: inline-block;
+  color: var(--color-primary);
+}
+
 /* # contact */
 
