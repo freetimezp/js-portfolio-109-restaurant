@@ -1,5 +1,12 @@
 //animation
 window.addEventListener("load", () => {
+    const preloader = document.querySelector(".preloader");
+    preloader.classList.add("loaded");
+
+    preloader.addEventListener("transitionend", function () {
+        this.style.display = "none";
+    });
+
     AOS.init({
         duration: 1000,
         easing: "ease-in-out",
