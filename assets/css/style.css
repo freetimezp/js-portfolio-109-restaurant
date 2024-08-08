@@ -139,7 +139,7 @@ textarea {
   margin: 0 auto;
   padding: 0 30px;
 }
-/* # animation on scroll */
+
 /* # section header */
 .section-header {
   margin: 0 auto 60px;
@@ -736,4 +736,7 @@ textarea {
 }
 
 
-
+/* # animation on scroll */
+[data-aos=fade-up] {
+  transform: translate3d(0, 45px, 0);
+}
